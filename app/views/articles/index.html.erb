@@ -1,0 +1,43 @@
+<style>
+h1 {
+  font-family: sans-serif;
+  
+}
+.title {
+  font-family: sans-serif;
+  color: darkgreen;
+}
+.description {
+  font-family: sans-serif;
+  color: darkred;
+}
+.articles {
+  font-family: sans-serif;
+  color: darkorange;
+}
+</style>
+
+<em><h1>Articles listing page</h1></em>
+
+<table>
+  <thead>
+    <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @articles.each do |article| %>
+  <tr>
+      <td class = "title">  <%=article.title%>
+      </td>
+      <td class = "description">  <%=article.description%>
+      </td>
+      <td class = articles>  Placeholder
+      </td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
