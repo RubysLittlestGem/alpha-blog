@@ -15,8 +15,15 @@ h1 {
   font-family: sans-serif;
   color: darkorange;
 }
+body {
+  
+	background-color: beige;
+}
+th {
+  font-size: 24px;
+}
 </style>
-
+<body>
 <em><h1>Articles listing page</h1></em>
 
 <table>
@@ -31,9 +38,9 @@ h1 {
   <tbody>
   <% @articles.each do |article| %>
   <tr>
-      <td class = "title">  <%=article.title%>
+      <td class = "title"> <%#= link_to article.title, article %><%=article.title %>
       </td>
-      <td class = "description">  <%=article.description%>
+      <td class = "description"> <%=article.description%>
       </td>
       <td class = articles>  Placeholder
       </td>
@@ -41,3 +48,4 @@ h1 {
       <% end %>
   </tbody>
 </table>
+</body>
