@@ -9,7 +9,27 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+<style>
+h1 {
+  font-family: sans-serif; 
+}
+.title {
+  font-family: sans-serif;
+  color: darkgreen;
+}
+.description {
+  font-family: sans-serif;
+  color: darkred;
+}
+.articles {
+  font-family: sans-serif;
+  color: darkorange;
+}
+body {
+	background-color: beige;
+}
 
+</style>
   <body>
 
   <% flash.each do |name, msg | %>
