@@ -4,7 +4,7 @@
 <% @articles.each do |article| %>
 <div class="container-article">
 <div class="card shadow p-3 mb-5 bg-white rounded">
-  <h5 class="card-header bg-dark">Created By: <em>Mark Christoph</em> </h5>
+  <h5 class="card-header text-white bg-dark">Created By: <em>Mark Christoph</em> </h5>
   <div class="card-body ">
     <h5 class="card-title"><%=article.title %></h5>
     <p class="card-text"><%=article.description%></p>
@@ -27,5 +27,5 @@
   <button type="button" class="btn btn-primary btn-sm"><%=link_to 'Create New Article', new_article_path , class: "btn-articles-new"%></button>
   <button type="button" class="btn btn-primary btn-sm"><%= link_to 'Home', root_path, class: "btn-home"%></button>
 </div>
-
+<p><br></p>
 </body>
