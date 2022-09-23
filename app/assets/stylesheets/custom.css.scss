@@ -2,19 +2,22 @@
 
  .container-fluid-home {
   //background:linear-gradient(rgb(18, 21, 99), black);
-   background-image: asset-url('splash.jpg');
-   color: rgb(159, 159, 159);
-   text-shadow: 2px 2px 3px rgb(3, 3, 3);
-  filter: blur(10);
+  background-image: asset-url('splash.jpg');
+   color: rgb(199, 199, 199);
+   text-shadow: 4px 4px 5px rgb(3, 3, 3);
   background-size: 100%;
-  height: 300px;
-  background-position: bottom;
-  background-repeat: no-repeat;
- 
+  height: 335px;
  }
+ .container-article {
+  width: 600px;
+  margin: auto;
+ }
+ 
+
 .col-md-8 {
   padding-bottom: 25px;
   margin: auto;
+  z-index: 3;
 }
 .btn-show, .btn-edit, .btn-delete, .btn-articles, .btn-articles-new, .btn-home {
   text-decoration: none;
@@ -34,7 +37,7 @@ body{
   text-align: center;
 }
 table {
-  padding: 10%;
+ 
   margin: auto;
 }
 
@@ -51,8 +54,7 @@ th{
 
 h1 { 
   color: rgb(159, 159, 159);
-  text-align: center;
-  padding: 45px;
+  padding: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 2px 2px 3px rgb(3, 3, 3);
  }
@@ -61,6 +63,9 @@ h1 {
   padding: 50%;
  }
 
+ .nav-link:hover {
+  color: rgb(173, 170, 170);
+}
 .nav-link {
   color: white;
 }
