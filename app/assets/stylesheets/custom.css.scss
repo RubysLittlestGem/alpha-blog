@@ -1,0 +1,62 @@
+@import 'bootstrap';
+
+ .container-fluid-home {
+  //background:linear-gradient(rgb(18, 21, 99), black);
+   background-image: url("https://groupquality.com/2015/wp-content/uploads/2015/10/Background-typing.jpg");
+  filter: blur(10);
+  background-size: 100%;
+  background-position-y: bottom;
+ 
+ }
+.col-md-8 {
+  margin: auto;
+}
+.btn-show, .btn-edit, .btn-delete, .btn-articles, .btn-articles-new, .btn-home {
+  text-decoration: none;
+  color: white;
+}
+.btn-articles:hover, .btn-home:hover, .btn-articles-new:hover {
+  text-decoration: none;
+  color: rgb(19, 197, 251);
+}
+
+.title, .description {
+  padding-right: 25px;
+}
+
+body{
+  background-color: beige;
+  text-align: center;
+}
+table {
+  padding: 10%;
+  margin: auto;
+}
+
+th{
+  color: rgb(121, 24, 28);
+}
+
+.title {
+  color: rgb(95, 182, 220);
+}
+.description {
+  color: rgb(60, 117, 141);
+}
+
+h1 { 
+  color: rgb(184, 131, 131);
+  text-align: center;
+  padding: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px 3px rgb(3, 3, 3);
+ }
+ 
+
+.navbar {
+  background-color: #d9caba !important;
+  }
+
+  
+
+ 
