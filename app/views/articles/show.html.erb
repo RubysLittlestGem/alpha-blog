@@ -2,7 +2,8 @@
 	<p><strong>Title: </strong><%=@article.title%></p>
 	<p><strong>Description: </strong><%=@article.description%></p>
 	<p><strong></strong></p>
+	<p>
 	<button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_article_path(@article) , class: "btn-edit"%></button>
 	<button type="button" class="btn btn-danger"><%=link_to 'Delete', article_path(@article), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?"}, class: "btn-delete"%></button>
 	<button type="button" class="btn btn-primary btn-md"><%= link_to 'Return to articles listing', articles_path, class: "btn-articles"%></button>
-
+	</p>

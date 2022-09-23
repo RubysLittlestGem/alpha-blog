@@ -5,11 +5,13 @@
    background-image: url("https://groupquality.com/2015/wp-content/uploads/2015/10/Background-typing.jpg");
   filter: blur(10);
   background-size: 100%;
-  background-position-y: bottom;
+  height: 300px;
+  background-position: bottom;
   background-repeat: no-repeat;
  
  }
 .col-md-8 {
+  padding-bottom: 25px;
   margin: auto;
 }
 .btn-show, .btn-edit, .btn-delete, .btn-articles, .btn-articles-new, .btn-home {
@@ -26,7 +28,7 @@
 }
 
 body{
-  background-color: beige;
+  background-color: rgb(215, 215, 215);
   text-align: center;
 }
 table {
@@ -46,18 +48,32 @@ th{
 }
 
 h1 { 
-  color: rgb(184, 131, 131);
+  color: rgb(159, 159, 159);
   text-align: center;
-  padding: 15px;
+  padding: 45px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 2px 2px 3px rgb(3, 3, 3);
  }
  
+ .btn-sign-in {
+  padding: 50%;
+ }
 
-.navbar {
-  background-color: #d9caba !important;
-  }
-
+.nav-link {
+  color: white;
+}
   
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+/* Other Classes for Page Styling */
+
+
 
  
