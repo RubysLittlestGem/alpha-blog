@@ -9,13 +9,15 @@
   height: 335px;
  }
  .container-article {
-  
+  width: 400px;
   margin: auto;
+ } 
+ .btn-group {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
  }
 
- container-btn {
-  padding-bottom: 25px;
- }
 
 .col-md-8 {
   padding-bottom: 25px;
@@ -35,10 +37,6 @@
   padding-right: 25px;
 }
 
-body{
-  background-color: rgb(215, 215, 215);
-  text-align: center;
-}
 table {
  
   margin: auto;
@@ -59,11 +57,12 @@ h1 {
   color: rgb(159, 159, 159);
   padding: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-shadow: 2px 2px 3px rgb(3, 3, 3);
+  text-shadow: 2px 2px 3px rgb(3, 3, 3);align-content: center;
  }
  
- .btn-sign-in {
-  padding: 50%;
+ #btn-sign-in {
+ 
+  
  }
 
  .nav-link:hover {

@@ -1,6 +1,15 @@
-<h1>Create a new article</h1>
+<div class="text-center mt-4" id="page-content">
+<h1 class="text-center mt-4">Create a new article</h1>
+
 
 <%= render 'form' %>
+
+<label for="exampleColorInput" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
 <p>
+<div class="col text-center">
  <button type="button" class="btn btn-primary btn-md"><%= link_to 'Cancel and return to articles listing', articles_path, class: "btn-articles"%></button>
+</div>
 </p>
+</div>

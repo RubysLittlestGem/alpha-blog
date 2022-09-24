@@ -9,23 +9,25 @@
     <h5 class="card-title"><%=article.title %></h5>
     <p class="card-text"><%=article.description%></p>
     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-success"><%= link_to 'View', article_path(article), class: "btn-show" %></button>
-  <button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_article_path(article), class: "btn-edit"%></button>
-  <button type="button" class="btn btn-danger"><%= link_to 'Delete', article_path(article), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?" }, class: "btn-delete" %> </button>
-</div>
+       <button type="button" class="btn btn-success"><%= link_to 'View', article_path(article), class: "btn-show" %></button>
+       <button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_article_path(article), class: "btn-edit"%></button>
+       <button type="button" class="btn btn-danger"><%= link_to 'Delete', article_path(article), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?" }, class: "btn-delete" %> </button>
+    </div>
   </div>
-  <div class="card-footer text-muted">
-    <small>Created <%= time_ago_in_words(article.created_at) %> ago,
-    edited <%= time_ago_in_words(article.updated_at)%> ago </small>
-  </div>
-</div><br>
+    <div class="card-footer text-muted">
+      <small>Created <%= time_ago_in_words(article.created_at) %> ago,
+      edited <%= time_ago_in_words(article.updated_at)%> ago </small>
+    </div>
+  </div><br>
 </div>
  <% end %>
 
 <div class="container">
 <hr class="my-4">
+<div class="col text-center">
   <button type="button" class="btn btn-primary btn-sm"><%=link_to 'Create New Article', new_article_path , class: "btn-articles-new"%></button>
   <button type="button" class="btn btn-primary btn-sm"><%= link_to 'Home', root_path, class: "btn-home"%></button>
+</div>
 </div>
 <p><br></p>
 </body>
