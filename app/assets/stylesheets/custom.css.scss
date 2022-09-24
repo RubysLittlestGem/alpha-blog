@@ -9,6 +9,7 @@
   max-width: fit-content;
   justify-content: center;
   background-position: top;
+  margin: auto;
  }
 
  .custom-toggler, .navbar-toggler-icon {
@@ -18,10 +19,7 @@
 .custom-toggler, .navbar-toggler {
   border-color: rgb(255, 253, 254);
 } 
- .container-home {
-  margin: auto;
-  width: auto;
- }
+
 
  .container-article {
   width: 400px;
