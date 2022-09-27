@@ -1,18 +1,31 @@
-	<div class="text-center mt-4" id="page-content">
-<h1 class="text-center mt-4">Showing article details</h1>
-	<p><strong>Title: </strong><%=@article.title%></p>
-	<p><strong>Description: </strong><%=@article.description%></p>
+
+<div class="text-center mt-4" id="page-content">
+  <h2 class="text-center title-name mt-4"><%=@article.title.upcase%></h2>
+	<br>
+	<div class="container-show justify-content-center">
+	<div class="col-5 bg-primary justify-content-center rounded">
+	<br>
+	<div class="container col-10 bg-light rounded mt-4 py-4">
+	<p class=""><strong>Title: </strong><%=@article.title%></p>
+	<p class=""><strong>Description: </strong><%=@article.description%></p>
+	</div>
 	<p><strong></strong></p>
 	<p>
+	<br>
 	<div class="col text-center">
-	<button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_article_path(@article) , class: "btn-edit"%></button>
-	<button type="button" class="btn btn-danger"><%=link_to 'Delete', article_path(@article), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?"}, class: "btn-delete"%></button>
-	<button type="button" class="btn btn-primary btn-md"><%= link_to 'Return to articles listing', articles_path, class: "btn-articles"%></button>
+		<button type="button" class="btn btn-warning btn-outline-light"><%= link_to 'Edit', edit_article_path(@article) , class: "btn-edit-view"%></button>
+		<button type="button" class="btn btn-danger btn-outline-light"><%=link_to 'Delete', article_path(@article), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?"}, class: "btn-delete-view"%></button>
+		<button type="button" class="btn btn-primary btn-md btn-outline-light"><%= link_to 'Return to articles listing', articles_path, class: "btn-articles-view"%></button>
+		<br>
 	</div>
-	</p>
 	</div>
- <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark bg-gradient text-white">
-    <div class="container text-center">
+	</div>
+		</div>
+		</p>
+
+
+   		<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark bg-gradient text-white">
+   <div class="container text-center">
       <small>Copyright &copy; RubysLittlestGem</small>
     </div>
   </footer>

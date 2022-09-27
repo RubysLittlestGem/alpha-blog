@@ -20,6 +20,12 @@
 .custom-toggler, .navbar-toggler {
   border-color: rgb(255, 253, 254);
 } 
+.container-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 
  .container-article {
@@ -42,20 +48,31 @@
   
  }
 
- 
-
+ boby {
+  background-color: rgb(159, 159, 159);
+ }
+ .col{
+padding-bottom: 25px;
+ }
 .col-md-8 {
  
   margin: auto;
   z-index: 3;
 }
-.btn-show, .btn-edit, .btn-delete, .btn-articles, .btn-articles-new, .btn-home {
+.btn-show, .btn-edit, .btn-edit-view, .btn-delete, .btn-articles , .btn-articles-view, .btn-articles-new, .btn-home, .btn-articles-create {
   text-decoration: none;
   color: white;
 }
-.btn-articles:hover, .btn-home:hover, .btn-articles-new:hover {
+.btn-show:hover, .btn-edit:hover, .btn-delete-view, .btn-delete:hover, .btn-articles:hover, .btn-articles-new:hover, .btn-home:hover, .btn-articles-create:hover {
+  text-decoration: none;
+  color: white;
+}
+ .btn-articles-view:hover,  .btn-edit-view:hover, .btn-delete-view:hover, .btn-home:hover, .btn-articles-new:hover, .btn-articles-create:hover {
   text-decoration: none;
   color: rgb(19, 197, 251);
+}
+.btn-articles-create {
+  padding-bottom: 25px;
 }
 
 .title, .description {
@@ -76,7 +93,7 @@ th{
 }
 
 
-h1 { 
+h1, .title-name { 
   color: rgb(159, 159, 159);
   padding: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -129,8 +146,33 @@ body {
 }
 
 
+
 label {
   margin-bottom: 0.5rem;
 }
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
